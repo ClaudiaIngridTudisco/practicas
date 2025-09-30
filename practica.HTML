@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica</title>
 </head>
+<header>
+    <nav><!--barra de navegación -->
+    <ul>
+    <li><a href="#seccion1">Ir a tutoriales HTML</a></li>
+    <li><a href="#seccion2">Ir a tutoriales CSS</a></li>
+    <li><a href="#seccion3">Ir a tutoriales JAVASCRIPT</a></li>
+    <li><a href="#seccion4">Nuestra ubicación</a></li>
+    <li><a href="#seccion5">Tutoriales externos</a></li>
+    </ul>
+    </nav>
+</header>
 <body>
 
     <h1 id="destino">Inicio</h1>
@@ -17,42 +28,43 @@
     Ratione earum adipisci culpa sequi nobis dolorem tempora mollitia maiores accusantium. Quibusdam alias pariatur molestiae velit quos.</p>
     <p><span style="color: rgba(0, 204, 255, 1); font-weight:bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur provident doloribus, cupiditate praesentium,
          repellat blanditiis totam iste a repellendus quibusdam vitae, culpa natus eaque molestias impedit excepturi aperiam. Ratione.</span></p>
-    <p></p>
+    <p></p><!--párrafo con estilo inline -->
     
     <img src="https://www.infobae.com/resizer/v2/HYSFALTTVZAGVLIMYHEN4EONII.jpeg?auth=f3033c0dd3be1e7fd61edc4433305173df8880094839d61d681b79e18d44b775&smart=true&width=992&height=661&quality=85" alt="Dibujo estilo Ghibli" width="400" title="imagen de internet">
-
+<!--link a una imagen externa -->
     <img src="./img/ghibliCelu.jpeg" alt="Dibujo estilo Ghibli con celular" width="400" title="imagen local"><br>
-
-       <ol>
+<!--link a una imagen local -->
+       
+        <ol> <!--lista ordenada -->
         <li>Básico</li>
         <li>Intermedio</li>
         <li>Avanzado</li>
-    </ol>
+         </ol>
     <br>
     
-    <ul>
+    <ul> <!--lista desordenada -->
         <li>Paso a paso</li>
         <li>Nuestros alumnos</li>
         <li>Testimonios</li>
     </ul>
     <br>
 
-    <dl>
+    <dl><!--lista de definición -->
     <dt>Aprende</dt>
       <dd>Crea tu página web</dd>
       <dd>Modifica tu página web</dd>
     </dl>
 <br>
 
-    <table>
+    <table> <!--tabla -->
   <thead>
     <tr>
-      <th>HTML</th>
-      <th>CSS</th>
-      <th>JAVASCRIPT</th>
+      <th id="seccion1">HTML</th> <!--encabezados de la tabla -->
+      <th id="seccion2">CSS</th>
+      <th id="seccion3">JAVASCRIPT</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody> <!--cuerpo de la tabla -->
     <tr>
       <td>Básico</td>
       <td>Básico</td>
@@ -75,15 +87,15 @@
 <h4>Podés encontrarnos aquí</h4>
 <br>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.119011271864!2d-58.385908087666806!3d-34.6011519728423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses-419!2sar!4v1759272994057!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+<iframe id="seccion4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.119011271864!2d-58.385908087666806!3d-34.6011519728423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses-419!2sar!4v1759272994057!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!--Iframe navegable de ubicación -->
 <br>
 <br>
 
 
-    <a href="https://www.w3schools.com/html/">Tutoriales de HTML</a><br>
-    <a href="mailto:tudiscosoftware@gmail.com">Contacto</a><br>
-    <a href="#destino">Ir al inicio</a>
+    <a id="seccion5" href="https://www.w3schools.com/html/">Tutoriales de HTML</a><br> <!--link a página externa-->
+    <a href="mailto:tudiscosoftware@gmail.com">Contacto</a><br> <!--link a mail -->
+    <a href="#destino">Ir al inicio</a> <!--link de navegación interna-->
 
 </body>
 </html>
