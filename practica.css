@@ -1,0 +1,55 @@
+.reenie-beanie-regular {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Reenie Beanie", cursive; /* Aplica la fuente personalizada */
+  font-weight: 400;
+  font-style: normal;
+  background-image: linear-gradient(to right, #0791ee, #0b0e01); /* Define el degradado */
+  -webkit-background-clip: text; /* Para compatibilidad con navegadores */
+  background-clip: text;
+  color: transparent; /* Hace el texto transparente para que se vea el degradado */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto: desplazamiento-x desplazamiento-y desenfoque color */
+}
+
+p:nth-child(odd) {
+  background-color: rgba(0, 225, 255, 0.219);
+}  /*aplica fondo de color a los párrafos impares*/
+
+.boton {
+  background-color: #46ccd1; /* Color de fondo inicial */
+  color: white; /* Color del texto inicial */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a una mano */
+  font-size: 16px; /* Tamaño de la fuente */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+  transition: all 0.3s ease; /* Transición suave para todas las propiedades */
+}
+
+/* Estilo al pasar el mouse (hover) */
+.boton:hover {
+  background-color: #0056b3; /* Nuevo color de fondo */
+  transform: scale(1.1); /* Aumenta el tamaño */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Estilo al hacer clic (active) */
+.boton:active {
+  background-color: #01041f; /* Otro color al hacer clic */
+  transform: scale(0.95); /* Reduce ligeramente el tamaño al hacer clic */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil al hacer clic */
+}
+
+.caja-informativa{
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espacio */
+  background-color: rgba(0, 174, 255, 0.247); /* Color de Fondo*/
+  text-align: center; /* Texto centrado */
+  border: 1px solid #ccc; /* Opcional: un borde de color gris claro */
+}
+
