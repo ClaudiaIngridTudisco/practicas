@@ -1,3 +1,9 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 .reenie-beanie-regular {
   font-family: "Reenie Beanie", cursive;
   font-weight: 400;
@@ -8,7 +14,7 @@ h1 {
   font-family: "Reenie Beanie", cursive; /* Aplica la fuente personalizada */
   font-weight: 400;
   font-style: normal;
-  background-image: linear-gradient(to right, #0791ee, #0b0e01); /* Define el degradado */
+  background-image: linear-gradient(to right, #111111, #9c9e97); /* Define el degradado */
   -webkit-background-clip: text; /* Para compatibilidad con navegadores */
   background-clip: text;
   color: transparent; /* Hace el texto transparente para que se vea el degradado */
@@ -16,11 +22,11 @@ h1 {
 }
 
 p:nth-child(odd) {
-  background-color: rgba(0, 225, 255, 0.219);
+  background-color: rgba(0, 0, 0, 0.1);
 }  /*aplica fondo de color a los párrafos impares*/
 
 .boton {
-  background-color: #46ccd1; /* Color de fondo inicial */
+  background-color: #333; /* Color de fondo inicial */
   color: white; /* Color del texto inicial */
   padding: 10px 20px; /* Espaciado interno */
   border: none; /* Sin borde */
@@ -33,14 +39,14 @@ p:nth-child(odd) {
 
 /* Estilo al pasar el mouse (hover) */
 .boton:hover {
-  background-color: #0056b3; /* Nuevo color de fondo */
+  background-color: #555; /* Nuevo color de fondo */
   transform: scale(1.1); /* Aumenta el tamaño */
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
 /* Estilo al hacer clic (active) */
 .boton:active {
-  background-color: #01041f; /* Otro color al hacer clic */
+  background-color: #030303; /* Otro color al hacer clic */
   transform: scale(0.95); /* Reduce ligeramente el tamaño al hacer clic */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil al hacer clic */
 }
@@ -48,8 +54,145 @@ p:nth-child(odd) {
 .caja-informativa{
   border-radius: 10px; /* Bordes redondeados */
   padding: 20px; /* Espacio */
-  background-color: rgba(0, 174, 255, 0.247); /* Color de Fondo*/
+  background-color: #555555b2; /* Color de Fondo*/
   text-align: center; /* Texto centrado */
+  color:white;
+  font-weight: bold;
   border: 1px solid #ccc; /* Opcional: un borde de color gris claro */
 }
 
+.contenedor {
+      display: flex;
+      gap: 20px;
+    }
+
+.caja {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid black;
+      background-color: rgb(186, 197, 201);
+    }
+
+    .content-box {
+      box-sizing: content-box;
+    }
+
+    .border-box {
+      box-sizing: border-box;
+    }
+
+
+
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    ul.menu {
+      display: flex;
+      justify-content: center; /* Alineación centrada */
+      gap: 30px;               /* Separación entre ítems */
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul.menu li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    ul.menu li a:hover {
+      background-color: #555;
+      border-radius: 4px;
+    }
+
+    table {
+    border-collapse: collapse; /* Une los bordes */
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-content {
+      padding: 50px;
+      
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .card-content p {
+      color: #555;
+      font-size: 16px;
+    }
+
+    footer {
+      padding: 10px 0;
+      width: 100%;
+      box-sizing: border-box;
+    
+    }
+      ul.footer {
+      width: 100%;
+      display: flex;
+      justify-content: center; /* Alineación centrada */
+      gap: 30px;               /* Separación entre ítems */
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul.footer li a {
+      color: rgb(59, 58, 58);
+      text-decoration: none;
+      font-size: 18px;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    ul.footer li a:hover {
+      background-color: #d4cece;
+      border-radius: 4px;
+    }
+
+
+    /* 📱 Media Query para pantallas pequeñas */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }

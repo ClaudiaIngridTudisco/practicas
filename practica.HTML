@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica</title>
-    <link rel="stylesheet" href="practica.css"
+    <link rel="stylesheet" href="practica.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="practica.css">
@@ -12,7 +12,7 @@
 </head>
 <header>
     <nav> <!--lista ordenada -->
-    <ul>
+    <ul class="menu">
     <li><a href="#seccion1">Ir a tutoriales HTML</a></li>
     <li><a href="#seccion2">Ir a tutoriales CSS</a></li>
     <li><a href="#seccion3">Ir a tutoriales JAVASCRIPT</a></li>
@@ -31,6 +31,12 @@
     <h6>A tu ritmo</h6>
     <br>
 
+
+         <img src="./img/mundo.jpg" alt="Mundo" width="400" title="imagen local"><br>
+<!--link a una imagen local -->
+    
+    <br>
+
       <div class="caja-informativa">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quia reiciendis quos doloremque alias quis aliquam eaque blanditiis 
       unde illo eveniet nobis, commodi ducimus ad, corrupti veritatis, provident molestiae sapiente.
@@ -40,15 +46,18 @@
 
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque magnam minima ipsam aliquam? <br> 
     Ratione earum adipisci culpa sequi nobis dolorem tempora mollitia maiores accusantium. Quibusdam alias pariatur molestiae velit quos.</p>
-    <p><span style="color: rgb(11, 157, 194); font-weight:bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur provident doloribus, cupiditate praesentium,
+    <p><span style="color: rgb(82, 83, 83); font-weight:bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur provident doloribus, cupiditate praesentium,
          repellat blanditiis totam iste a repellendus quibusdam vitae, culpa natus eaque molestias impedit excepturi aperiam. Ratione.</span></p> <!--párrafo con estilo inline -->
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit minus nulla eius enim odit distinctio nobis dolores illo doloremque, labore quibusdam possimus blanditiis omnis magnam quaerat modi in debitis qui.</p>
     
-    <img src="https://www.infobae.com/resizer/v2/HYSFALTTVZAGVLIMYHEN4EONII.jpeg?auth=f3033c0dd3be1e7fd61edc4433305173df8880094839d61d681b79e18d44b775&smart=true&width=992&height=661&quality=85" alt="Dibujo estilo Ghibli" width="400" title="imagen de internet">
+    <br>
+    
+   
+
+    <img src="https://picsum.photos/300/200?random=4" alt="Fotografía" width="400" title="imagen de internet">
 <!--link a una imagen externa -->
-    <img src="./img/ghibliCelu.jpeg" alt="Dibujo estilo Ghibli con celular" width="400" title="imagen local"><br>
-<!--link a una imagen local -->
-       
+
+    <br>
     <br>
     <button class="boton">Click aquí</button>
 
@@ -100,19 +109,61 @@
 
   </tbody>
 </table>
+
 <br>
+
+<h2>Comparación de Box Sizing</h2>
+  <div class="contenedor">
+    <div class="caja content-box">Content-box: el ancho declarado solo aplica al contenido</div>
+    <div class="caja border-box">Border-box: el ancho declarado incluye contenido, padding, y borde</div>
+  </div>
+<br>
+
+
+  <div class="grid-container">
+    <div class="card">
+      <img src="https://picsum.photos/300/200?random=1" alt="Imagen 1">
+      <div class="card-content">
+        <h3>Ejercicios HTML</h3>
+        <p>Ejercicios HTML desde básicos a avanzados.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/300/200?random=2" alt="Imagen 2">
+      <div class="card-content">
+        <h3>Ejercicios CSS</h3>
+        <p>Ejercicios CSS desde básicos a avanzados.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/300/200?random=3" alt="Imagen 3">
+      <div class="card-content">
+        <h3>Ejercicios JAVASCRIPT</h3>
+        <p>Ejercicios JAVASCRIPT desde básicos a avanzados.</p>
+      </div>
+    </div>
+  
+
+<br>
+<div style="text-align: center;">
 <h4>Podés encontrarnos aquí</h4>
 <br>
-
 <iframe id="seccion4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.119011271864!2d-58.385908087666806!3d-34.6011519728423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses-419!2sar!4v1759272994057!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <!--Iframe navegable de ubicación -->
+</div>
+
 <br>
 <br>
 
-
-    <a id="seccion5" href="https://www.w3schools.com/html/">Tutoriales de HTML</a><br> <!--link a página externa-->
-    <a href="mailto:tudiscosoftware@gmail.com">Contacto</a><br> <!--link a mail -->
-    <a href="#destino">Ir al inicio</a> <!--link de navegación interna-->
+<footer>
+  <ul class="footer">
+    <li><a id="seccion5" href="https://www.w3schools.com/html/">Tutoriales de HTML</a></li><!--link a página externa-->
+    <li><a href="mailto:tudiscosoftware@gmail.com">Contacto</a></li> <!--link a mail -->
+    <li><a href="#destino">Ir al inicio</a></li> <!--link de navegación interna-->
+  </ul>
+</footer>
 
 </body>
 </html>
