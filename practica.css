@@ -4,6 +4,13 @@ html, body {
   padding: 0;
 }
 
+ header {
+      position: sticky;
+      top: 0;
+      background-color: #595c5c;
+      padding: 15px 20px;
+      z-index: 1000; /* asegura que esté por encima del contenido */
+    }
 .contenedorImagen {
   max-width: 600px;
   margin: 20px auto;
@@ -23,6 +30,29 @@ html, body {
   font-weight: bold;
   color: #141414;
   }
+
+
+  #animacion {
+      width: 150px;               /* ancho fijo */
+      height: 150px;              /* mismo valor = cuadrado */
+      background-color: #ff6f61;  /* color llamativo */
+      margin: 50px auto;
+      border-radius: 10px;
+      animation: none;
+    }
+
+  #animacion:hover {
+      animation: girar 5s linear forwards;
+    }
+
+    @keyframes girar {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
 .reenie-beanie-regular {
   font-family: "Reenie Beanie", cursive;
@@ -71,6 +101,34 @@ p:nth-child(odd) {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil al hacer clic */
 }
 
+.boton-icono {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 70px;
+  margin-bottom: 30px;
+  background-color: #2b2d2e;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+  }
+
+.boton-icono::before {
+  content: "🔍"; /* ícono antes del texto */
+  margin-right: 8px;
+  font-size: 18px;
+  }
+
+  .boton-icono:hover {
+    background-color: #9b9ea0;
+  }
+
+
+
 .caja-informativa{
   border-radius: 10px; /* Bordes redondeados */
   padding: 20px; /* Espacio */
@@ -80,6 +138,8 @@ p:nth-child(odd) {
   font-weight: bold;
   border: 1px solid #ccc; /* Opcional: un borde de color gris claro */
 }
+
+
 
 .contenedor {
       display: flex;
@@ -194,6 +254,49 @@ p:nth-child(odd) {
       font-size: 2em;
     }
 
+      .caja-centrada {
+      width: 400px;               /* ancho fijo */
+      margin: 50px auto;          /* centrado horizontal */
+      padding: 20px;              /* espacio interno */
+      background-color: #df9308;  /* fondo colorido */
+      border-radius: 10px;        /* esquinas redondeadas (opcional) */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra (opcional) */
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+
+    .elementos {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .elemento {
+      padding: 10px;
+      margin: 5px;
+      background-color: #ffd966;
+      border: 1px solid #999;
+    }
+
+    .inline {
+      display: inline;
+      background-color: #ff9999;
+    }
+
+    .block {
+      display: block;
+      background-color: #99ccff;
+    }
+
+    .inline-block {
+      display: inline-block;
+      background-color: #99ff99;
+    }
+
+    .none {
+      display: none;
+      background-color: #cccccc;
+    }
 
     ul.lista-vertical {
       list-style: none;
