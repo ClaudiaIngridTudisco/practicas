@@ -1,7 +1,12 @@
 
 html, body {
   margin: 0;
-  padding: 0;
+  padding: 0; 
+}
+  body{
+  transition: background-color 0.5s ease;
+  font-family: sans-serif;
+  padding-top: 50px;
 }
 
  header {
@@ -11,6 +16,22 @@ html, body {
       padding: 15px 20px;
       z-index: 1000; /* asegura que esté por encima del contenido */
     }
+
+  #cambiarFondo {
+     background-color: #333;
+      margin-left: 100px;
+      margin-top: 20px;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+  
+    }
+
+
+
 .contenedorImagen {
   max-width: 600px;
   margin: 20px auto;
@@ -77,6 +98,7 @@ p:nth-child(odd) {
 
 .boton {
   background-color: #333; /* Color de fondo inicial */
+  margin-left: 100px;
   color: white; /* Color del texto inicial */
   padding: 10px 20px; /* Espaciado interno */
   border: none; /* Sin borde */
@@ -100,6 +122,24 @@ p:nth-child(odd) {
   transform: scale(0.95); /* Reduce ligeramente el tamaño al hacer clic */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil al hacer clic */
 }
+
+#bienvenida{
+  background-color: #333;
+  color: white;
+  padding: 10px 20px; 
+  margin:20px auto;
+  border-radius: 5px;
+  display: block;
+}
+
+#mensaje {
+      display: none;
+      margin: 20px auto;
+      font-weight: bold;
+      color: rgb(34, 36, 34);
+      width: fit-content;
+  }
+    
 
 .boton-icono {
   display: inline-block;
